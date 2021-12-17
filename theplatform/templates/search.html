@@ -1,0 +1,45 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/new.css"> 
+    <link rel="stylesheet" href="fontawesome-free-5.15.1/css/all.css">
+    <title>Search</title>
+    <link href="./new.css" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <form name="search" action="{% url 'search' %} "method= "GET">
+            <input type="text" class="input" name="query" >
+            <button type="submit" class="file-upload-btn" >
+        </form>
+    </div>
+<style>
+    .file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #0e2b1b;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #0e2b1b;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .file-upload-btn:hover {
+    background: #2c1111;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  
+</style>
+    <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+</body>
